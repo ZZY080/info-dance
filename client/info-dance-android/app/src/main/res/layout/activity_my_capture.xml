@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyCaptureActivity">
+    <com.info_dance.info_dance.CustomBarcodeView
+        android:id="@+id/zxing_barcode_scanner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+
+        />
+
+    <TextView
+        android:id="@+id/scan_instruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请扫描二维码"
+        android:layout_centerInParent="true"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+</RelativeLayout >

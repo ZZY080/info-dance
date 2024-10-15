@@ -1,0 +1,97 @@
+.footer-container {
+    /* padding: 20px 96px; */
+    user-select: none;
+}
+.footer-content {
+    display: flex;
+    padding: 20px 96px;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #101214;
+}
+.footer-content .info {
+   /* flex: 1; */
+}
+.footer-content .info  .desc-icons{ 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+.footer-content .info  .desc-icons .desc{
+    color: white;
+    margin-right: 20px;
+}
+.footer-content .info  .desc-icons .icons{
+    display: flex;
+    flex-direction: row;
+}
+.footer-content .info  .desc-icons .icons .icon {
+    width: 40px;
+    height: 40px;
+    /* border-radius: 50%; */
+    overflow: hidden;
+    margin-right: 20px;
+}
+.footer-content .info  .desc-icons .icons .icon img {
+    width: 100%;
+    height: 100%;
+    /* background-color: white; */
+}
+.footer-content .info .company-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+}
+.footer-content .info .company-right .company {
+    color: white;
+    margin-right: 20px;
+}
+.footer-content .info .company-right .right {
+    color: white;
+}
+
+.footer-content .info .low {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+}
+.footer-content .info .low  .police {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+}
+.footer-content .info .low .word {
+    color: white;
+}
+.footer-content .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+}
+.footer-content .contact .word {
+    color: white;
+}
+.footer-content .contact .btn {
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #3c3f43;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.footer-content .website {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+.footer-content .website .word {
+ color: white;
+}
+.footer-content .website .btn {
+    margin-top: 20px;
+}

@@ -1,0 +1,29 @@
+# 1.忽略文件夹
+node_modules/
+dist-electron/
+release/
+dist/
+build/
+
+**/info-dance-android/.gradle
+**/info-dance-android/gradle/caches
+**/info-dance-android/.idea
+
+**/info-dance-springboot-server/.ideal/
+**/info-dance-springboot-server/target/
+!**/info-dance-springboot-server/src/main/**/target/
+!**/info-dance-springboot-server/src/test/**/target/
+
+
+
+# 2.忽略文件
+package-lock.json
+yarn.lock
+*.iml
+
+
+
+
+
+
+

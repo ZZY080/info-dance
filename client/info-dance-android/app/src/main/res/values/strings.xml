@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">info-dance</string>
+    <string name="home">home</string>
+    <string name="mate">mate</string>
+    <string name="message">message</string>
+    <string name="my">my</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="missing">missing</string>
+    <string name="generate">Generate</string>
+    <string name="top_tab_bar_item_padding">30dp</string>
+    <string name="english">英语</string>
+    <string name="low">法律</string>
+    <string name="law">法律</string>
+    <string name="activity">活动</string>
+    <string name="dress">穿搭</string>
+    <string name="travel">研学</string>
+    <string name="scanQrcode">扫描二维码</string>
+    <string name="todo">TODO</string>
+    <string name="medicine">医学</string>
+    <string name="computer">计算机</string>
+    <string name="buddy">搭子</string>
+
+</resources>
