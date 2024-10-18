@@ -24,7 +24,7 @@ import { RolePermissionEntity } from '@common/entity/role-permission/role-permis
         RolePermissionEntity,
       ],
 
-      synchronize: true, // Use this option carefully in production
+      synchronize: false, // Use this option carefully in production
     }),
   ],
   providers: [],
