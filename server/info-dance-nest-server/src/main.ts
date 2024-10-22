@@ -9,6 +9,7 @@ import { join } from 'path';
 import { SERVER_HOST, SERVER_PORT } from '@config/config';
 import { LoggingInterceptor } from '@common/interceptor/logging.interceptor';
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
+import { TransformInterceptor } from '@common/interceptor/transform.interceptor';
 
 async function bootstrap() {
   const app = await NestFactory.create<NestExpressApplication>(AppModule);
@@ -31,10 +32,13 @@ async function bootstrap() {
     }),
   );
   // 全局过滤器处理异常
-  // app.useGlobalFilters(new AllExceptionsFilter());
+  app.useGlobalFilters(new AllExceptionsFilter());
 
   // 全局拦截器
-  // app.useGlobalInterceptors(new LoggingInterceptor());
+  app.useGlobalInterceptors(
+    new TransformInterceptor(),
+    // new LoggingInterceptor(),
+  );
 
   // cors处理跨域
   app.enableCors({

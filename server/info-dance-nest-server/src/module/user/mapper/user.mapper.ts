@@ -1,11 +1,11 @@
-import { CreateUserDto } from '../dto/user/create-user.dto';
 // import { UpdateUserDto } from '../dto/user/update-user.dto';
 import { UserEntity } from '../entity/user.entity';
 import { UserInterface } from '../interface/user.interface';
+import { CreateOneUserSchema } from '../schema/create-one-user.schema';
 
 export class UserMapper {
   // 将创建用户的DTO转换为用户实体
-  static fromCreateDtoToEntity(createUserDto: CreateUserDto): UserEntity {
+  static fromCreateDtoToEntity(createUserDto: CreateOneUserSchema): UserEntity {
     const user = new UserEntity();
     user.name = createUserDto.name;
     user.email = createUserDto.email;

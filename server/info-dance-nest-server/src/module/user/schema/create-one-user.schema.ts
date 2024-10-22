@@ -7,12 +7,13 @@ import {
   IsString,
   Length,
 } from 'class-validator';
+import { CreateOneUserDto } from '../dto/create-one-user.dto';
 
-export class CreateUserDto {
+export class CreateOneUserSchema implements CreateOneUserDto {
   @IsString()
   @IsOptional()
   @Length(6, 50)
-  declare readonly name: string;
+  declare readonly name?: string;
 
   @IsEmail()
   @IsNotEmpty()
@@ -21,7 +22,7 @@ export class CreateUserDto {
   @IsPhoneNumber()
   @IsOptional()
   @Length(11)
-  declare readonly phone: string;
+  declare readonly phone?: string;
 
   @IsString()
   @IsNotEmpty()
@@ -30,5 +31,5 @@ export class CreateUserDto {
 
   @IsString()
   @IsOptional()
-  declare readonly avatar: string;
+  declare readonly avatar?: string;
 }
